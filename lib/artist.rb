@@ -1,0 +1,17 @@
+class Artist
+  attr_reader :name, :songs
+  attr_writer :name
+  
+  def initialize(name)
+    @name = name
+    @songs = []
+  end
+  
+  
+  
+  def add_song(song)
+    new_song = Song.new(song)
+    @songs << new_song
+  end
+  
+end
